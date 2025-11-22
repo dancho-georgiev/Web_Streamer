@@ -6,9 +6,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Play Movie by IMDb ID</h1>
+  <h1>Play Media by IMDb ID</h1>
 
-  <input type="text" id="imdb-input" placeholder="Enter IMDb ID (e.g., tt0111161)">
+<label class="switch">
+  <input type="checkbox" id="myCheck" onclick="showSeriesMenu()">
+  <span class="slider round"></span>
+</label>
+  <p id="modeLabel">Mode: Movie</p>
+  <br>
+
+ <div id="inputsContainer">
+    <input type="text" id="imdb-input" placeholder="IMDb ID" >
+    <input type="number" id="season-input" placeholder="Season Number">
+    <input type="number" id="episode-input" placeholder="Episode Number">
+ </div>
   <button id="play-btn">Play Movie</button>
 
   <div id="player" style="margin-top: 20px;"></div>
