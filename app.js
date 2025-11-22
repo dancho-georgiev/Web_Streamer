@@ -13,13 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
       modeLabel.textContent = "Mode: Series";
       seasonInput.style.display = "block";
       episodeInput.style.display = "block";
-      playBtn.textContent = "Play Movie"
+      playBtn.textContent = "Play Series";
+
     } else {
 
       modeLabel.textContent = "Mode: Movie";
       seasonInput.style.display = "none";
       episodeInput.style.display = "none";
-      playBtn.textContent = "Play Series"
+      playBtn.textContent = "Play Movie";
     }
   });
 
